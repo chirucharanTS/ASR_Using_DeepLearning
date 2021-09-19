@@ -1,0 +1,12 @@
+The folder contains -
+	- IEEE Format Project Report
+	- Mid Sem, End Sem Review PPTs
+	- Main References
+	- Code Directory
+		- LAS Demo
+		- DeepSpeech 2 Demo
+		- Spectogram Augmentation Demo
+		- LAS implementation
+		- Deepspeech2 Implementation
+
+Link of Dataset - https://www.openslr.org/12 Clean 100 Dataset

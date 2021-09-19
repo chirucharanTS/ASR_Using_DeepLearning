@@ -1,0 +1,31 @@
+Listen, Attend and Spell - PyTorch Implementation Instructions
+
+Description
+
+Implementation of Listen Attend and Spell on LibriSpeech
+The idea is to learn all components of a speech recogniser jointly. The paper describes an encoder-decoder approach, called Listener and Speller respectively.
+
+The Listener consists of a Pyramidal Bi-LSTM Network structure that takes in the given utterances and compresses it to produce high-level representations for the Speller network.
+The Speller takes in the high-level feature output from the Listener network and uses it to compute a probability distribution over sequences of characters using the attention mechanism.
+
+Script Requirements
+
+- Python 3
+- GPU 
+- python_speech_features
+- PyTorch
+- pandas(https://pandas.pydata.org/)
+    For LibriSpeech dataset loading.
+
+    
+- LibriSpeech - Use clean-train-set from http://www.openslr.org/12/
+
+Run  python3 util/librispeech_preprocess.py for filter bank features
+- LAS Model
+    Run the following commands to train LAS on LibriSpeech  ​  
+
+        mkdir -p checkpoint
+        mkdir -p log
+        python3 train_libri.py with config file
+
+
